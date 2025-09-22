@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.2",
+  "id": "f8e268e0-9b77-4e98-84f0-5c31b28bda4b",
+  "packageName": "de.frederik.bot",
+  "developer": {
+    "name": "Mark Malenica",
+    "websiteUrl": "https://",
+    "privacyUrl": "https://",
+    "termsOfUseUrl": "https://"
+  },
+  "name": {
+    "short": "Frederik",
+    "full": "Frederik – Dein persönlicher Assistent"
+  },
+  "description": {
+    "short": "Frederik hilft dir bei E-Mails, Terminen und Aufgaben.",
+    "full": "Frederik ist dein KI-Assistent in Microsoft Teams. Er kann E-Mails lesen und senden, Termine im Outlook-Kalender anlegen, Erinnerungen setzen und mit Microsoft Graph API auf deine Daten zugreifen."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#2b88d8",
+  "bots": [
+    {
+      "botId": "f8e268e0-9b77-4e98-84f0-5c31b28bda4b",
+      "scopes": ["personal", "team", "groupchat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal"],
+          "commands": [
+            { "title": "E-Mail senden", "description": "Frederik schreibt und verschickt eine E-Mail." },
+            { "title": "E-Mails lesen", "description": "Frederik liest deine neuesten E-Mails." },
+            { "title": "Termin erstellen", "description": "Frederik legt einen Kalendereintrag in Outlook an." },
+            { "title": "Meine Termine", "description": "Zeigt deine nächsten Termine im Kalender an." },
+            { "title": "Teams Meeting", "description": "Erstellt ein Teams Meeting mit Link zum Beitreten." }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [
+    "token.botframework.com",
+    "smba.trafficmanager.net",
+    "46fb03c635ff.ngrok-free.app"
+  ]
+}
